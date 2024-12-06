@@ -1,0 +1,28 @@
+<div class="table-responsive">
+  <table class="table table-striped table-bordered">
+    <thead>
+      <tr>
+        <th scope="col">userId</th>
+        <th scope="col">IP Address</th>
+        <th scope="col">User Agent</th>
+        <th scope="col">Token</th>
+        <th scope="col">Actions</th>
+      </tr>
+    </thead>
+    <tbody>
+      <!-- Assuming you have a list of users called `users` passed to the template -->
+      {{#each Activity}}
+      <tr>
+        <th scope="row">{{this.userId}}</th> <!-- Corrected -->
+        <td>{{this.ipAddress}}</td> <!-- Corrected -->
+        <td>{{this.userAgent}}</td> <!-- Corrected -->
+        <td>{{this.token}}</td> <!-- Corrected -->
+
+        <td>
+          <a href="/activity/delete/{{this._id}}" class="btn btn-danger btn-sm">Delete</a>
+        </td>
+      </tr>
+      {{/each}}
+    </tbody>
+  </table>
+</div>

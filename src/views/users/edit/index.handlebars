@@ -1,0 +1,16 @@
+<div class="container mt-4">
+
+  <h2>Edit User</h2>
+  {{> messages/index}}
+  <form method="POST" action="/users/edit/{{user._id}}">
+    <div class="mb-3">
+      <label for="username" class="form-label">Username</label>
+      <input type="text" class="form-control" id="username" name="username" value="{{user.username}}" required />
+    </div>
+    <div class="mb-3">
+      <label for="email" class="form-label">Email</label>
+      <input type="email" class="form-control" id="email" name="email" value="{{user.email}}" required />
+    </div>
+    <button type="submit" class="btn btn-primary">Update</button>
+  </form>
+</div>

@@ -1,0 +1,24 @@
+<div class="container">
+  <div class="row g-3">
+    <div class="bg-warning col-sm-4 h-75 rounded-box">
+      <h3 style="font-weight:bold;">{{users}}</h3>
+      <p style="font-size: 20px;">users</p>
+    </div>  
+    <div class="bg-success col-sm-4 h-75 rounded-box">
+      <h3 style="font-weight:bold;">{{activity}}</h3>
+      <p style="font-size: 20px;">Login Activity</p>
+    </div>
+      <div class="bg-info col-sm-4 h-75 rounded-box">
+      <h3 style="font-weight:bold;">Hi {{user.username}}</h3>
+      <p style="font-size: 20px;">Today is :{{day}}</p>
+    </div>
+  </div>
+</div>
+
+<style>
+  .rounded-box {
+    border-radius: 10px; 
+    padding: 20px; 
+    text-align: center; 
+  }
+</style>
